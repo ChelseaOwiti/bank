@@ -20,8 +20,6 @@ public class Account {
    private double input = 0;
    private double withdraw = balance - input;
    private double deposit = balance + input;
-    private String JOptionPane;
-   
    
 //    
     public double getBalance(){
@@ -29,15 +27,15 @@ public class Account {
     return this.balance;
     }
     public double withdraw(double withdraw){
-    //String input = JOptionPane.showInputDialog(null,"Enter amount to withdraw","Withdrawal",JOptionPane.PLAIN_MESSAGE);
+    String input = (String)JOptionPane.showInputDialog(null,"Enter amount to withdraw","Withdrawal",JOptionPane.ERROR_MESSAGE, null, null,"");
     
-    //double withAm = 0;
-       // try{
-            //withAm = Double.parseDouble(input);
-        //} //catch(NumberFormartException e){
+    double withAm = 0;
+        try{
+            withAm = Double.parseDouble(input);
+        } catch(NumberFormatException e){
             
         }
-      // return 0;
+       return 0;
     
     }
     
@@ -45,10 +43,10 @@ public class Account {
 //        
 //    }
 //new function to test
-    public double deposit(){
-        return this.depost;
-        
-    }
+//    public double deposit(){
+//        return this.depost;
+//        
+//    }
 
 //   
     
