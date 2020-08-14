@@ -163,7 +163,7 @@ public class Bankika extends javax.swing.JFrame {
    //sign up button
     
     public void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
-            jButton2.addActionListener(this);
+            //jButton2.addActionListener(this);
             Signup b = new Signup();
             b.setVisible(true);
             b.setResizable(true);
