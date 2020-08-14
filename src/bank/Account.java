@@ -29,9 +29,15 @@ public class Account {
     return this.balance;
     }
     public double withdraw(double withdraw){
-   //tring input = JOptionPane.showInputDialog(null,"Enter amount to withdraw","Withdrawal",JOptionPane.;
-    double withAm = 0;
-       return 0;
+    //String input = JOptionPane.showInputDialog(null,"Enter amount to withdraw","Withdrawal",JOptionPane.PLAIN_MESSAGE);
+    
+    //double withAm = 0;
+       // try{
+            //withAm = Double.parseDouble(input);
+        //} //catch(NumberFormartException e){
+            
+        }
+      // return 0;
     
     }
 //   

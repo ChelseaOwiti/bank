@@ -103,9 +103,9 @@ public class Signup extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("URW Gothic L", 1, 15)); // NOI18N
         jLabel6.setText("Phone number");
 
-        jButton1.setBackground(new java.awt.Color(68, 63, 149));
+        jButton1.setBackground(new java.awt.Color(5, 4, 9));
         jButton1.setFont(new java.awt.Font("URW Gothic L", 1, 15)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(247, 247, 247));
+        jButton1.setForeground(new java.awt.Color(17, 13, 13));
         jButton1.setText("SUBMIT");
 
         othername.addActionListener(new java.awt.event.ActionListener() {

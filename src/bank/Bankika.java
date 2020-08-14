@@ -42,8 +42,6 @@ public class Bankika extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-        getContentPane().setBackground(new java.awt.Color(66, 41, 137));
-
 
         jInternalFrame1 = new javax.swing.JInternalFrame();
         jLabel1 = new javax.swing.JLabel();
@@ -57,10 +55,9 @@ public class Bankika extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jInternalFrame1.setBackground(new java.awt.Color(66, 41, 137));
+        jInternalFrame1.setBackground(new java.awt.Color(68, 63, 149));
         jInternalFrame1.setBorder(new javax.swing.border.MatteBorder(null));
         jInternalFrame1.setVisible(true);
-
 
         jLabel1.setFont(new java.awt.Font("URW Palladio L", 1, 24)); // NOI18N
         jLabel1.setText("BANKIKA");
@@ -73,9 +70,9 @@ public class Bankika extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("URW Gothic L", 1, 15)); // NOI18N
         jLabel3.setText("Password :");
 
-        jButton1.setBackground(new java.awt.Color(68, 63, 149));
+        jButton1.setBackground(new java.awt.Color(75, 138, 89));
         jButton1.setFont(new java.awt.Font("URW Gothic L", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(247, 241, 241));
+        jButton1.setForeground(new java.awt.Color(85, 68, 68));
         jButton1.setText("LOGIN");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -88,8 +85,11 @@ public class Bankika extends javax.swing.JFrame {
 
         jButton2.setFont(new java.awt.Font("URW Gothic L", 1, 15)); // NOI18N
         jButton2.setText("SIGN UP");
-        jButton2.setBackground(new java.awt.Color(68, 63, 149));
-        jButton2.setForeground(new java.awt.Color(247, 241, 241));
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jInternalFrame1Layout = new javax.swing.GroupLayout(jInternalFrame1.getContentPane());
         jInternalFrame1.getContentPane().setLayout(jInternalFrame1Layout);
@@ -138,7 +138,7 @@ public class Bankika extends javax.swing.JFrame {
                 .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(jButton2))
-                .addContainerGap(215, Short.MAX_VALUE))
+                .addContainerGap(217, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -162,17 +162,17 @@ public class Bankika extends javax.swing.JFrame {
 
    //sign up button
     
-    public void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
-            //jButton2.addActionListener(this);
-            Signup b = new Signup();
-            b.setVisible(true);
-            b.setResizable(true);
-            dispose();
-    }
+//    public void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
+//            //jButton2.addActionListener(this);
+//            Signup b = new Signup();
+//            b.setVisible(true);
+//            b.setResizable(true);
+//            dispose();
+//    }
 //
     //login button
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        if(evt.getSource()== jButton1){
+        
 				
                 
               try{
@@ -201,10 +201,15 @@ public class Bankika extends javax.swing.JFrame {
              
               } catch (ClassNotFoundException ex) {
                 Logger.getLogger(Bankika.class.getName()).log(Level.SEVERE, null, ex);
-            }
-
-        }
+              }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+            Signup b = new Signup();
+            b.setVisible(true);
+            b.setResizable(true);
+            dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
