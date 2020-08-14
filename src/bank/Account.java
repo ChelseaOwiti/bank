@@ -27,7 +27,7 @@ public class Account {
     return this.balance;
     }
     public double withdraw(double withdraw){
-    String input = (String)JOptionPane.showInputDialog(null,"Enter amount to withdraw","Withdrawal",JOptionPane.ERROR_MESSAGE, null, null,"");
+    String input = (String)JOptionPane.showInputDialog(null,"Enter amount to withdraw","Withdrawal",JOptionPane.PLAIN_MESSAGE, null, null,"");
     
     double withAm = 0;
         try{
