@@ -41,9 +41,15 @@ public class Account {
     
     }
     
-    public void testGitWorked(){
+//    public void testGitWorked(){
+//        
+//    }
+//new function to test
+    public double deposit(){
+        return this.depost;
         
     }
+
 //   
     
    
